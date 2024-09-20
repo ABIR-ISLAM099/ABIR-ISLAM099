@@ -10,7 +10,7 @@ app.use(express.json());
 // Function to check for updates
 async function checkForUpdates() {
     try {
-        const response = await fetch('https://api.github.com/repos/YOUR_USERNAME/YOUR_REPO/releases/latest');
+        const response = await fetch('https://api.github.com/repos/ABIR-ISLAM099/ABIR-ISLAM099/releases/latest');
         const latestRelease = await response.json();
         return latestRelease;
     } catch (error) {
